@@ -1,4 +1,4 @@
-# p2p.org - Home assignment
+# p2p.org
 
 Task:
 ------------
