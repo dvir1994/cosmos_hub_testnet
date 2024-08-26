@@ -37,7 +37,6 @@ git clone https://github.com/dvir1994/p2p_org_solana.git && cd p2p_org_solana
 Security:
 ------------------------
 1. Secure Shell Configuration (SSH):
-   - SSH access allowed only to specific IPs (office/VPN).
    - Only SSH allowed for authentication - Password-based login is disabled.
    - SSH connections secured with `fail2ban` to protect against brute-force attacks.
 
@@ -47,7 +46,7 @@ Security:
 
 3. User management:
    - Dedicated app for node and exporter (with a strong password).
-   - Root login is disabled.
+   - Root user is disabled.
 
 4. Setup and configure ufw
 
