@@ -1,6 +1,6 @@
 # p2p.org
 
-Task:
+Requirements:
 ------------
 1. Deploy a Cosmos Hub testnet node.
 
