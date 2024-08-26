@@ -1,0 +1,19 @@
+[Unit]
+Description=Gaiad Testnet Daemon (cosmovisor)
+After=network-online.target
+
+[Service]
+User=$APP_USER_NAME
+ExecStart=/home/$APP_USER_NAME/go/bin/cosmovisor run start --home $NODE_DATA_DIR --x-crisis-skip-assert-invariants
+Restart=always
+RestartSec=3
+LimitNOFILE=20000
+Environment="DAEMON_NAME=gaiad"
+Environment="DAEMON_HOME=$NODE_DATA_DIR"
+Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=true"
+Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
+Environment="DAEMON_LOG_BUFFER_SIZE=512"
+Environment="UNSAFE_SKIP_BACKUP=true"
+
+[Install]
+WantedBy=multi-user.target
