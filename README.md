@@ -18,12 +18,14 @@ Artifacts:
 ----------------
 1. Shell script:
    - Setup: Gaia testnet node, Prometheus exporter, Nginx reverse proxy and security measures.
-```bash
-cd ~
-git clone https://github.com/dvir1994/p2p_org_solana.git && cd p2p_org_solana
+   - Quick start command - install and configure all components:
 
-./main.sh <app_user_name>
-```
+    ```bash
+    cd ~
+    git clone https://github.com/dvir1994/p2p_org_solana.git && cd p2p_org_solana
+    
+    ./main.sh <app_user_name>
+    ```
 
 2. Golang:
    - Prometheus exporter to collect and expose node metrics.
