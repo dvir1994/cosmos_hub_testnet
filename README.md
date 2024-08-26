@@ -1,7 +1,5 @@
 # p2p.org - Home assignment
 
-Assignee: Dvir Chikvashvili
-
 Task:
 ------------
 1. Deploy a Cosmos Hub testnet node.
