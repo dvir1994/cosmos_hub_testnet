@@ -24,8 +24,8 @@ if [ $total_memory -lt 8000 ]; then
 fi
 # check the amount of free disk space, should be more than 300GB
 total_disk_space=$(df -h / | awk '/\//{print $4}')
-if [ ${total_disk_space::-1} -lt 300 ]; then
-    echo "Not enough disk space, please use a server with at least 300GB of disk space"
+if [ ${total_disk_space::-1} -lt 100 ]; then
+    echo "Not enough disk space, please use a server with at least 100GB of disk space"
     exit 1
 fi
 # check if password is provided
