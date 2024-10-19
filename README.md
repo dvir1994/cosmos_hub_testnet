@@ -1,5 +1,3 @@
-# p2p.org
-
 Requirements:
 ------------
 1. Deploy a Cosmos Hub testnet node.
